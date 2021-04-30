@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="sortcut icon" href="/assets/bookLogo.png" type="image/x-icon">
+    <title>Digital Library</title>
+</head>
+<body>
+
+    <header class="header"> </header>
+
+    <main>
+        <section class="section_one"> 
+            <form class="formulario" action="" onsubmit="mostrarDados(event)">
+                <div class="itensFormulario">
+                    <label for="titulo"> Título </label>
+                    <input id="titulo" type="text" placeholder="Insira o título do livro" onfocus=this.value='' required>
+                </div>
+               
+                <div class="itensFormulario">
+                    <label for="autor"> Autor </label>
+                    <input id="autor" type="text" placeholder="Insira o nome do autor" onfocus=this.value='' required>
+                </div>
+                
+                <div class="itensFormulario">
+                    <label for="isbn"> ISBN </label>
+                    <input id="isbn" type="text" placeholder="Insira o código ISBN" onfocus=this.value='' required>
+                </div>
+              
+                <div class="itensFormulario">
+                    <label for="data"> Data da Publicação </label>
+                    <input id="data" type="date" onfocus=this.value='' required>
+                </div>
+
+                <div class="itensFormulario">
+                    <label for="paginas"> Páginas </label>
+                    <input id="paginas" type="text" placeholder="Insira a quantidade de páginas do livro" onfocus=this.value='' required>
+                </div>
+              
+                <div class="itensFormulario">
+                    <input type="submit" class="addButton" id="botaoAdicionar" name="adicionar" value="Adicionar Livro">
+                </div>
+ 
+            </form>
+
+        </section>
+
+        <section class="section_two"> 
+            <table class="tabela" id="resposta">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>ISBN</th>
+                        <th>Data da Públicação</th>
+                        <th>Páginas</th>
+                        <th>Data de Cadastro</th> 
+                    </tr> 
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <div class="removeBook">
+                <input type="button" class="removeButton" id="botarDeletar" name="deletar" value="Deletar Livro">
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
