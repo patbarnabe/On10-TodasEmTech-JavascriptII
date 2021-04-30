@@ -126,9 +126,3 @@ let selectionBooks = books.map(function(books){
 });
 
 document.querySelector("#resposta tbody").innerHTML = selectionBooks.join("");
-
-
-
-
-//https://www.devmedia.com.br/javascript-map-mapeando-elementos-de-um-array/40648
-//https://youtu.be/AjdMtLF0Z6w
